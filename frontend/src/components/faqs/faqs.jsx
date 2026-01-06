@@ -11,6 +11,7 @@ export default function FAQ() {
         <h2 className="text-4xl font-bold text-center text-red-900 mb-12">
           Perguntas Frequentes?
         </h2>
+
         <p className="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
           Encontre respostas rápidas para suas dúvidas sobre nossos serviços e produtos. Nossa equipe está sempre pronta para ajudar com qualquer informação adicional que você precisar.
         </p>
@@ -22,11 +23,15 @@ export default function FAQ() {
                 onClick={() => setOpenIndex(openIndex === index ? null : index)}
                 className="w-full px-6 py-4 flex items-center justify-between text-left hover:bg-red-50 transition"
               >
-                <span className="font-semibold text-gray-900">{faq.question}</span>
+                <span className="font-semibold text-gray-900">
+                  {faq.question}
+                </span>
+
                 <ChevronDown 
                   className={`text-red-900 transition-transform ${openIndex === index ? 'rotate-180' : ''}`} 
                 />
               </button>
+
               {openIndex === index && (
                 <div className="px-6 pb-4 text-gray-700">
                   {faq.answer}
@@ -34,18 +39,6 @@ export default function FAQ() {
               )}
             </div>
           ))}
-        </div>
-
-        <div className="mt-12 flex flex-wrap gap-4 justify-center">
-          <button className="px-6 py-2 bg-red-900 text-white rounded-full hover:bg-red-800 transition">
-            Qual é a razão?
-          </button>
-          <button className="px-6 py-2 border-2 border-red-900 text-red-900 rounded-full hover:bg-red-900 hover:text-white transition">
-            Quais tipos de carnes tem?
-          </button>
-          <button className="px-6 py-2 border-2 border-red-900 text-red-900 rounded-full hover:bg-red-900 hover:text-white transition">
-            Quais tipos de produtos?
-          </button>
         </div>
       </div>
     </section>

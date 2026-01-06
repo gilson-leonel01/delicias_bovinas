@@ -1,0 +1,412 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/glvl/Projects/Code/fullstack/delicias_bovinas/backend/ProductsManagement/ProductsManagement.API/ProductsManagement.API.csproj": {}
+  },
+  "projects": {
+    "/home/glvl/Projects/Code/fullstack/delicias_bovinas/backend/ProductsManagement/ProductsManagement.API/ProductsManagement.API.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/glvl/Projects/Code/fullstack/delicias_bovinas/backend/ProductsManagement/ProductsManagement.API/ProductsManagement.API.csproj",
+        "projectName": "ProductsManagement.API",
+        "projectPath": "/home/glvl/Projects/Code/fullstack/delicias_bovinas/backend/ProductsManagement/ProductsManagement.API/ProductsManagement.API.csproj",
+        "packagesPath": "/home/glvl/.nuget/packages/",
+        "outputPath": "/home/glvl/Projects/Code/fullstack/delicias_bovinas/backend/ProductsManagement/ProductsManagement.API/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/glvl/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/home/glvl/Projects/Code/fullstack/delicias_bovinas/backend/ProductsManagement/ProductsManagement.Application/ProductsManagement.Application.csproj": {
+                "projectPath": "/home/glvl/Projects/Code/fullstack/delicias_bovinas/backend/ProductsManagement/ProductsManagement.Application/ProductsManagement.Application.csproj"
+              },
+              "/home/glvl/Projects/Code/fullstack/delicias_bovinas/backend/ProductsManagement/ProductsManagement.Domain/ProductsManagement.Domain.csproj": {
+                "projectPath": "/home/glvl/Projects/Code/fullstack/delicias_bovinas/backend/ProductsManagement/ProductsManagement.Domain/ProductsManagement.Domain.csproj"
+              },
+              "/home/glvl/Projects/Code/fullstack/delicias_bovinas/backend/ProductsManagement/ProductsManagement.Infrastructure/ProductsManagement.Infrastructure.csproj": {
+                "projectPath": "/home/glvl/Projects/Code/fullstack/delicias_bovinas/backend/ProductsManagement/ProductsManagement.Infrastructure/ProductsManagement.Infrastructure.csproj"
+              },
+              "/home/glvl/Projects/Code/fullstack/delicias_bovinas/backend/Shared/Shared.Database/Shared.Database.csproj": {
+                "projectPath": "/home/glvl/Projects/Code/fullstack/delicias_bovinas/backend/Shared/Shared.Database/Shared.Database.csproj"
+              },
+              "/home/glvl/Projects/Code/fullstack/delicias_bovinas/backend/Shared/Shared.Security/Shared.Security.csproj": {
+                "projectPath": "/home/glvl/Projects/Code/fullstack/delicias_bovinas/backend/Shared/Shared.Security/Shared.Security.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.OpenApi": {
+              "target": "Package",
+              "version": "[8.0.22, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.6.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.416/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/glvl/Projects/Code/fullstack/delicias_bovinas/backend/ProductsManagement/ProductsManagement.Application/ProductsManagement.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/glvl/Projects/Code/fullstack/delicias_bovinas/backend/ProductsManagement/ProductsManagement.Application/ProductsManagement.Application.csproj",
+        "projectName": "ProductsManagement.Application",
+        "projectPath": "/home/glvl/Projects/Code/fullstack/delicias_bovinas/backend/ProductsManagement/ProductsManagement.Application/ProductsManagement.Application.csproj",
+        "packagesPath": "/home/glvl/.nuget/packages/",
+        "outputPath": "/home/glvl/Projects/Code/fullstack/delicias_bovinas/backend/ProductsManagement/ProductsManagement.Application/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/glvl/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/home/glvl/Projects/Code/fullstack/delicias_bovinas/backend/ProductsManagement/ProductsManagement.Domain/ProductsManagement.Domain.csproj": {
+                "projectPath": "/home/glvl/Projects/Code/fullstack/delicias_bovinas/backend/ProductsManagement/ProductsManagement.Domain/ProductsManagement.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.416/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/glvl/Projects/Code/fullstack/delicias_bovinas/backend/ProductsManagement/ProductsManagement.Domain/ProductsManagement.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/glvl/Projects/Code/fullstack/delicias_bovinas/backend/ProductsManagement/ProductsManagement.Domain/ProductsManagement.Domain.csproj",
+        "projectName": "ProductsManagement.Domain",
+        "projectPath": "/home/glvl/Projects/Code/fullstack/delicias_bovinas/backend/ProductsManagement/ProductsManagement.Domain/ProductsManagement.Domain.csproj",
+        "packagesPath": "/home/glvl/.nuget/packages/",
+        "outputPath": "/home/glvl/Projects/Code/fullstack/delicias_bovinas/backend/ProductsManagement/ProductsManagement.Domain/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/glvl/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.416/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/glvl/Projects/Code/fullstack/delicias_bovinas/backend/ProductsManagement/ProductsManagement.Infrastructure/ProductsManagement.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/glvl/Projects/Code/fullstack/delicias_bovinas/backend/ProductsManagement/ProductsManagement.Infrastructure/ProductsManagement.Infrastructure.csproj",
+        "projectName": "ProductsManagement.Infrastructure",
+        "projectPath": "/home/glvl/Projects/Code/fullstack/delicias_bovinas/backend/ProductsManagement/ProductsManagement.Infrastructure/ProductsManagement.Infrastructure.csproj",
+        "packagesPath": "/home/glvl/.nuget/packages/",
+        "outputPath": "/home/glvl/Projects/Code/fullstack/delicias_bovinas/backend/ProductsManagement/ProductsManagement.Infrastructure/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/glvl/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/home/glvl/Projects/Code/fullstack/delicias_bovinas/backend/ProductsManagement/ProductsManagement.Application/ProductsManagement.Application.csproj": {
+                "projectPath": "/home/glvl/Projects/Code/fullstack/delicias_bovinas/backend/ProductsManagement/ProductsManagement.Application/ProductsManagement.Application.csproj"
+              },
+              "/home/glvl/Projects/Code/fullstack/delicias_bovinas/backend/ProductsManagement/ProductsManagement.Domain/ProductsManagement.Domain.csproj": {
+                "projectPath": "/home/glvl/Projects/Code/fullstack/delicias_bovinas/backend/ProductsManagement/ProductsManagement.Domain/ProductsManagement.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.416/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/glvl/Projects/Code/fullstack/delicias_bovinas/backend/Shared/Shared.Database/Shared.Database.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/glvl/Projects/Code/fullstack/delicias_bovinas/backend/Shared/Shared.Database/Shared.Database.csproj",
+        "projectName": "Shared.Database",
+        "projectPath": "/home/glvl/Projects/Code/fullstack/delicias_bovinas/backend/Shared/Shared.Database/Shared.Database.csproj",
+        "packagesPath": "/home/glvl/.nuget/packages/",
+        "outputPath": "/home/glvl/Projects/Code/fullstack/delicias_bovinas/backend/Shared/Shared.Database/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/glvl/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Npgsql": {
+              "target": "Package",
+              "version": "[10.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.416/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/glvl/Projects/Code/fullstack/delicias_bovinas/backend/Shared/Shared.Security/Shared.Security.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/glvl/Projects/Code/fullstack/delicias_bovinas/backend/Shared/Shared.Security/Shared.Security.csproj",
+        "projectName": "Shared.Security",
+        "projectPath": "/home/glvl/Projects/Code/fullstack/delicias_bovinas/backend/Shared/Shared.Security/Shared.Security.csproj",
+        "packagesPath": "/home/glvl/.nuget/packages/",
+        "outputPath": "/home/glvl/Projects/Code/fullstack/delicias_bovinas/backend/Shared/Shared.Security/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/glvl/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.IdentityModel.Tokens": {
+              "target": "Package",
+              "version": "[8.15.0, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[8.15.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.416/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

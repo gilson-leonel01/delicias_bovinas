@@ -9,7 +9,7 @@ export const faqsMockup = [
   },
   {
     question: 'Como entrar em contato?',
-    answer: 'Você pode nos contatar através do formulário na seção de contatos, pelo email deliciasbovinas@gmail.com, telefone +244 928 826 987 / 923 456 789, ou visite nosso estabelecimento no Bairro Popular, Rua Do Kilabo.'
+    answer: 'Você pode nos contatar através do formulário na seção de contatos, pelo email deliciasbovinas@gmail.com, telefone +244 928 826 987 / 923 456 789, ou visite nosso estabelecimento no Bairro Popular, Rua Do Kibabo.'
   },
   {
     question: 'Como recuperar a senha?',

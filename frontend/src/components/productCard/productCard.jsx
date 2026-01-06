@@ -8,6 +8,7 @@ export default function ProductCard({ product, featured = false }) {
           -{product.discount}%
         </div>
       )}
+      
       <div className="relative h-48 overflow-hidden bg-gray-100">
         <img 
           src={product.image} 
@@ -15,15 +16,26 @@ export default function ProductCard({ product, featured = false }) {
           className="w-full h-full object-cover hover:scale-110 transition-transform duration-300"
         />
       </div>
+
       <div className="p-4">
-        <p className="text-sm text-gray-500 mb-1">{product.category}</p>
-        <h3 className="text-lg font-bold text-gray-900 mb-2">{product.name}</h3>
+        <p className="text-sm text-gray-500 mb-1">
+          {product.category}
+        </p>
+
+        <h3 className="text-lg font-bold text-gray-900 mb-2">
+          {product.name}
+        </h3>
+
         <div className="flex items-center gap-1 mb-3">
           {[...Array(5)].map((_, i) => (
             <Star key={i} size={14} className="fill-yellow-400 text-yellow-400" />
           ))}
-          <span className="text-xs text-gray-500 ml-1">(5.0)</span>
+          
+          <span className="text-xs text-gray-500 ml-1">
+            (5.0)
+          </span>
         </div>
+
         <div className="flex items-center justify-between mb-4">
           <div>
             <p className="text-2xl font-bold text-red-900">
@@ -31,7 +43,8 @@ export default function ProductCard({ product, featured = false }) {
             </p>
           </div>
         </div>
-        <button className="w-full bg-red-900 text-white py-2 rounded-lg hover:bg-red-800 transition font-semibold">
+
+        <button className="w-full bg-red-900 text-white py-2 rounded-lg hover:bg-red-800 transition hover:cursor-pointer font-semibold">
           Adicionar
         </button>
       </div>

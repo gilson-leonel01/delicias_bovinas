@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "Kp2k188/aec=",
+  "success": true,
+  "projectFilePath": "/home/glvl/Projects/Code/fullstack/delicias_bovinas/backend/Shared/Shared.Database/Shared.Database.csproj",
+  "expectedPackageFiles": [
+    "/home/glvl/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/8.0.0/microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512",
+    "/home/glvl/.nuget/packages/microsoft.extensions.logging.abstractions/8.0.0/microsoft.extensions.logging.abstractions.8.0.0.nupkg.sha512",
+    "/home/glvl/.nuget/packages/npgsql/10.0.1/npgsql.10.0.1.nupkg.sha512",
+    "/home/glvl/.nuget/packages/system.diagnostics.diagnosticsource/9.0.11/system.diagnostics.diagnosticsource.9.0.11.nupkg.sha512"
+  ],
+  "logs": []
+}

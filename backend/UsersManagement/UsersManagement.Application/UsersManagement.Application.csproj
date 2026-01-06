@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <ProjectReference Include="..\UsersManagement.Domain\UsersManagement.Domain.csproj" />
+    <ProjectReference Include="..\UsersManagement.Infrastructure\UsersManagement.Infrastructure.csproj" />
+    <ProjectReference Include="..\..\Shared\Shared.Security\Shared.Security.csproj" />
+    <ProjectReference Include="..\..\Shared\Shared.Database\Shared.Database.csproj" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+</Project>
