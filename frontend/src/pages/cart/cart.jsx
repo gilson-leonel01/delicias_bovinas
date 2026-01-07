@@ -121,7 +121,7 @@ export default function CartPage() {
 
                           <button 
                             onClick={() => removeItem(item.id)}
-                            className="text-red-600 hover:text-red-800 p-2 hover:bg-red-50 rounded-lg transition"
+                            className="text-red-600 hover:text-red-800 p-2 hover:bg-red-50 rounded-lg hover:cursor-pointer transition"
                           >
                             <Trash2 size={20} />
                           </button>
@@ -152,7 +152,7 @@ export default function CartPage() {
                           <div className="flex items-center gap-3 bg-gray-100 rounded-lg p-1">
                             <button
                               onClick={() => updateQuantity(item.id, -1)}
-                              className="w-10 h-10 flex items-center justify-center bg-white rounded-lg hover:bg-red-100 hover:text-red-900 transition shadow-sm"
+                              className="w-10 h-10 flex items-center justify-center bg-white rounded-lg hover:bg-red-100 hover:text-red-900 hover:cursor-pointer transition shadow-sm"
                             >
                               <Minus size={18} />
                             </button>
@@ -163,7 +163,7 @@ export default function CartPage() {
 
                             <button
                               onClick={() => updateQuantity(item.id, 1)}
-                              className="w-10 h-10 flex items-center justify-center bg-white rounded-lg hover:bg-red-100 hover:text-red-900 transition shadow-sm"
+                              className="w-10 h-10 flex items-center justify-center bg-white rounded-lg hover:bg-red-100 hover:text-red-900 hover:cursor-pointer transition shadow-sm"
                             >
                               <Plus size={18} />
                             </button>
@@ -220,7 +220,7 @@ export default function CartPage() {
                   </span>
                 </div>
 
-                <button className="w-full bg-linear-to-r from-red-900 to-red-800 text-white py-4 rounded-lg font-bold text-lg hover:from-red-800 hover:to-red-700 transition shadow-lg flex items-center justify-center gap-2 mt-6">
+                <button className="w-full bg-linear-to-r from-red-900 to-red-800 text-white py-4 rounded-lg font-bold text-lg hover:from-red-800 hover:to-red-700 hover:cursor-pointer transition shadow-lg flex items-center justify-center gap-2 mt-6">
                   <CreditCard size={24} />
                   Finalizar Compra
                 </button>
@@ -241,24 +241,32 @@ export default function CartPage() {
                   <h3 className="font-bold text-gray-900 mb-3">Precisa de ajuda?</h3>
                   <div className="flex items-center gap-3 text-sm text-gray-600">
                     <MapPin size={18} className="text-red-900" />
-                    <span>Bairro Popular, Rua Do Kilamba</span>
+                    <a href="https://maps.app.goo.gl/csZ5LAnLEa1CMFLf6" target="_blank">
+                      <span>Bairro Popular, Rua Do Kibabo</span>
+                    </a>
                   </div>
+
                   <div className="flex items-center gap-3 text-sm text-gray-600">
                     <Phone size={18} className="text-red-900" />
-                    <span>+244 978 620 789 / 123 456 789</span>
+                    <a href="callto:+244 929 626 961">
+                      <span>+244 929 626 961</span>
+                    </a>
                   </div>
+
                   <div className="flex items-center gap-3 text-sm text-gray-600">
                     <Mail size={18} className="text-red-900" />
-                    <span>deliciasbovinas@gmail.com</span>
+                    <a href="mailto:deliciasbovinas@gmail.com">
+                      <span>deliciasbovinas@gmail.com</span>
+                    </a>
                   </div>
                 </div>
+
+                <button className="w-full mt-16 bg-white text-red-900 py-3 rounded-lg font-semibold border-2 border-red-900 hover:bg-red-900 hover:text-white hover:cursor-pointer transition flex items-center justify-center gap-2">
+                  <ArrowLeft size={20} />
+                  Continuar Comprando
+                </button>
               </div>
             </div>
-
-            <button className="w-full mt-4 bg-white text-red-900 py-3 rounded-lg font-semibold border-2 border-red-900 hover:bg-red-50 transition flex items-center justify-center gap-2">
-              <ArrowLeft size={20} />
-              Continuar Comprando
-            </button>
           </div>
         </div>
       </div>

@@ -103,8 +103,8 @@ export default function Contact() {
                 </div>
               </div>
             </div>
-            
-            <div className='mt-6'>
+
+            <div className="rounded-2xl h-64 mt-6 mr-18 flex items-center justify-center">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3942.4062176708035!2d13.257972273117627!3d-8.841718590528306!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1a51f39c7c291935%3A0x8d80e7e4f631a68f!2sKibabo%20Popula!5e0!3m2!1spt-PT!2sao!4v1767705362558!5m2!1spt-PT!2sao"
                 width="500"
@@ -114,7 +114,7 @@ export default function Contact() {
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
                 title="Kibabo Popula Map"
-                className="bg-gray-200 rounded-2xl h-64 flex items-center justify-center"
+                className="rounded-2xl h-64 flex items-center justify-center"
               />
             </div>
           </div>
