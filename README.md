@@ -122,9 +122,7 @@ http://localhost:5173
 
 ## 📝 Funcionalidades
 
-* 🥩 Catálogo de cortes bovinos premium
-
-* 📖 Receitas e dicas de preparo
+* 🥩 Catálogo de cortes bovinos
 
 * 👤 Gestão de usuários e autenticação
 
@@ -137,7 +135,7 @@ http://localhost:5173
 * 🔐 Segurança compartilhada entre serviços
 
 ## 🛠️ Tecnologias Utilizadas
-🔹 Backend
+### 🔹 Backend
 
 * .NET / C#
 
@@ -149,7 +147,7 @@ http://localhost:5173
 
 * Shared Kernel (Security, Database, Contracts)
 
-🔹 Frontend
+### 🔹 Frontend
 
 * React.js
 
@@ -171,7 +169,7 @@ http://localhost:5173
 
 * Lucide Icons
 
-📌 Links Úteis
+### 📌 Links Úteis
 
 * .NET Documentation
 
@@ -185,7 +183,7 @@ http://localhost:5173
 
 * [TanStack Query](https://tanstack.com/query)
 
-🤝 Contribuição
+## 🤝 Contribuição
 Contribuições são muito bem-vindas! 🚀\
 Para contribuir:
 
@@ -204,5 +202,7 @@ Para contribuir:
    ```
 
 4. Envie um Pull Request.
+
+---
 
 Desenvolvido com 🥩🔥 por [Gilson Leonel a.k.a G!](https://github.com/gilson-leonel01)
