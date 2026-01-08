@@ -1,7 +1,7 @@
 # 🥩 Delicias Bovinas — Ecommerce
  
 ## 📌 Visão Geral
-Delicias Bovinas é uma aplicação fullstack dedicada a celebrar a gastronomia premium baseada em carnes bovinas. A plataforma oferece uma seleção curada de cortes nobres, receitas, dicas de preparo, além de ferramentas para gestão de produtos, usuários, menus, controle de inventário e pedidos online.
+Delicias Bovinas é uma aplicação fullstack dedicada a gastronomia baseada em carnes bovinas. A plataforma oferece uma seleção curada de cortes nobres além de ferramentas para gestão de produtos, usuários, controle de inventário e pedidos online.
 
 O projeto foi desenvolvido com uma arquitetura moderna, escalável e bem organizada, separando claramente responsabilidades entre domínio, aplicação, infraestrutura e APIs.
 
