@@ -2,11 +2,12 @@
 
   <ItemGroup>
     <ProjectReference Include="..\UsersManagement.Domain\UsersManagement.Domain.csproj" />
-    <ProjectReference Include="..\UsersManagement.Application\UsersManagement.Application.csproj" />
+    <ProjectReference Include="..\..\Shared\Shared.Database\Shared.Database.csproj" />
   </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="BCrypt.Net-Next" Version="4.0.3" />
+    <PackageReference Include="Npgsql" Version="10.0.1" />
   </ItemGroup>
 
   <PropertyGroup>

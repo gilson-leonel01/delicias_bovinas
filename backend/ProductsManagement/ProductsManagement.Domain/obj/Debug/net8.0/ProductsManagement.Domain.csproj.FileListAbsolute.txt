@@ -1,0 +1,12 @@
+/home/glvl/Projects/Code/fullstack/delicias_bovinas/backend/ProductsManagement/ProductsManagement.Domain/bin/Debug/net8.0/ProductsManagement.Domain.deps.json
+/home/glvl/Projects/Code/fullstack/delicias_bovinas/backend/ProductsManagement/ProductsManagement.Domain/bin/Debug/net8.0/ProductsManagement.Domain.dll
+/home/glvl/Projects/Code/fullstack/delicias_bovinas/backend/ProductsManagement/ProductsManagement.Domain/bin/Debug/net8.0/ProductsManagement.Domain.pdb
+/home/glvl/Projects/Code/fullstack/delicias_bovinas/backend/ProductsManagement/ProductsManagement.Domain/obj/Debug/net8.0/ProductsManagement.Domain.GeneratedMSBuildEditorConfig.editorconfig
+/home/glvl/Projects/Code/fullstack/delicias_bovinas/backend/ProductsManagement/ProductsManagement.Domain/obj/Debug/net8.0/ProductsManagement.Domain.AssemblyInfoInputs.cache
+/home/glvl/Projects/Code/fullstack/delicias_bovinas/backend/ProductsManagement/ProductsManagement.Domain/obj/Debug/net8.0/ProductsManagement.Domain.AssemblyInfo.cs
+/home/glvl/Projects/Code/fullstack/delicias_bovinas/backend/ProductsManagement/ProductsManagement.Domain/obj/Debug/net8.0/ProductsManagement.Domain.csproj.CoreCompileInputs.cache
+/home/glvl/Projects/Code/fullstack/delicias_bovinas/backend/ProductsManagement/ProductsManagement.Domain/obj/Debug/net8.0/ProductsManagement.Domain.sourcelink.json
+/home/glvl/Projects/Code/fullstack/delicias_bovinas/backend/ProductsManagement/ProductsManagement.Domain/obj/Debug/net8.0/ProductsManagement.Domain.dll
+/home/glvl/Projects/Code/fullstack/delicias_bovinas/backend/ProductsManagement/ProductsManagement.Domain/obj/Debug/net8.0/refint/ProductsManagement.Domain.dll
+/home/glvl/Projects/Code/fullstack/delicias_bovinas/backend/ProductsManagement/ProductsManagement.Domain/obj/Debug/net8.0/ProductsManagement.Domain.pdb
+/home/glvl/Projects/Code/fullstack/delicias_bovinas/backend/ProductsManagement/ProductsManagement.Domain/obj/Debug/net8.0/ref/ProductsManagement.Domain.dll

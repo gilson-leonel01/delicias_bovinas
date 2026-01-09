@@ -1,0 +1,12 @@
+/home/glvl/Projects/Code/fullstack/delicias_bovinas/backend/UsersManagement/UsersManagement.Domain/bin/Debug/net8.0/UsersManagement.Domain.deps.json
+/home/glvl/Projects/Code/fullstack/delicias_bovinas/backend/UsersManagement/UsersManagement.Domain/bin/Debug/net8.0/UsersManagement.Domain.dll
+/home/glvl/Projects/Code/fullstack/delicias_bovinas/backend/UsersManagement/UsersManagement.Domain/bin/Debug/net8.0/UsersManagement.Domain.pdb
+/home/glvl/Projects/Code/fullstack/delicias_bovinas/backend/UsersManagement/UsersManagement.Domain/obj/Debug/net8.0/UsersManagement.Domain.GeneratedMSBuildEditorConfig.editorconfig
+/home/glvl/Projects/Code/fullstack/delicias_bovinas/backend/UsersManagement/UsersManagement.Domain/obj/Debug/net8.0/UsersManagement.Domain.AssemblyInfoInputs.cache
+/home/glvl/Projects/Code/fullstack/delicias_bovinas/backend/UsersManagement/UsersManagement.Domain/obj/Debug/net8.0/UsersManagement.Domain.AssemblyInfo.cs
+/home/glvl/Projects/Code/fullstack/delicias_bovinas/backend/UsersManagement/UsersManagement.Domain/obj/Debug/net8.0/UsersManagement.Domain.csproj.CoreCompileInputs.cache
+/home/glvl/Projects/Code/fullstack/delicias_bovinas/backend/UsersManagement/UsersManagement.Domain/obj/Debug/net8.0/UsersManagement.Domain.sourcelink.json
+/home/glvl/Projects/Code/fullstack/delicias_bovinas/backend/UsersManagement/UsersManagement.Domain/obj/Debug/net8.0/UsersManagement.Domain.dll
+/home/glvl/Projects/Code/fullstack/delicias_bovinas/backend/UsersManagement/UsersManagement.Domain/obj/Debug/net8.0/refint/UsersManagement.Domain.dll
+/home/glvl/Projects/Code/fullstack/delicias_bovinas/backend/UsersManagement/UsersManagement.Domain/obj/Debug/net8.0/UsersManagement.Domain.pdb
+/home/glvl/Projects/Code/fullstack/delicias_bovinas/backend/UsersManagement/UsersManagement.Domain/obj/Debug/net8.0/ref/UsersManagement.Domain.dll

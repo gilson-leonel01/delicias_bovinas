@@ -1,0 +1,13 @@
+/home/glvl/Projects/Code/fullstack/delicias_bovinas/backend/Shared/Shared.Security/bin/Debug/net8.0/Shared.Security.deps.json
+/home/glvl/Projects/Code/fullstack/delicias_bovinas/backend/Shared/Shared.Security/bin/Debug/net8.0/Shared.Security.dll
+/home/glvl/Projects/Code/fullstack/delicias_bovinas/backend/Shared/Shared.Security/bin/Debug/net8.0/Shared.Security.pdb
+/home/glvl/Projects/Code/fullstack/delicias_bovinas/backend/Shared/Shared.Security/obj/Debug/net8.0/Shared.Security.csproj.AssemblyReference.cache
+/home/glvl/Projects/Code/fullstack/delicias_bovinas/backend/Shared/Shared.Security/obj/Debug/net8.0/Shared.Security.GeneratedMSBuildEditorConfig.editorconfig
+/home/glvl/Projects/Code/fullstack/delicias_bovinas/backend/Shared/Shared.Security/obj/Debug/net8.0/Shared.Security.AssemblyInfoInputs.cache
+/home/glvl/Projects/Code/fullstack/delicias_bovinas/backend/Shared/Shared.Security/obj/Debug/net8.0/Shared.Security.AssemblyInfo.cs
+/home/glvl/Projects/Code/fullstack/delicias_bovinas/backend/Shared/Shared.Security/obj/Debug/net8.0/Shared.Security.csproj.CoreCompileInputs.cache
+/home/glvl/Projects/Code/fullstack/delicias_bovinas/backend/Shared/Shared.Security/obj/Debug/net8.0/Shared.Security.sourcelink.json
+/home/glvl/Projects/Code/fullstack/delicias_bovinas/backend/Shared/Shared.Security/obj/Debug/net8.0/Shared.Security.dll
+/home/glvl/Projects/Code/fullstack/delicias_bovinas/backend/Shared/Shared.Security/obj/Debug/net8.0/refint/Shared.Security.dll
+/home/glvl/Projects/Code/fullstack/delicias_bovinas/backend/Shared/Shared.Security/obj/Debug/net8.0/Shared.Security.pdb
+/home/glvl/Projects/Code/fullstack/delicias_bovinas/backend/Shared/Shared.Security/obj/Debug/net8.0/ref/Shared.Security.dll

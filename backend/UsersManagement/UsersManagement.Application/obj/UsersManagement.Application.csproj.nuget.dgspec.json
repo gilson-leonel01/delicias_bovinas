@@ -4,6 +4,138 @@
     "/home/glvl/Projects/Code/fullstack/delicias_bovinas/backend/UsersManagement/UsersManagement.Application/UsersManagement.Application.csproj": {}
   },
   "projects": {
+    "/home/glvl/Projects/Code/fullstack/delicias_bovinas/backend/Shared/Shared.Database/Shared.Database.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/glvl/Projects/Code/fullstack/delicias_bovinas/backend/Shared/Shared.Database/Shared.Database.csproj",
+        "projectName": "Shared.Database",
+        "projectPath": "/home/glvl/Projects/Code/fullstack/delicias_bovinas/backend/Shared/Shared.Database/Shared.Database.csproj",
+        "packagesPath": "/home/glvl/.nuget/packages/",
+        "outputPath": "/home/glvl/Projects/Code/fullstack/delicias_bovinas/backend/Shared/Shared.Database/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/glvl/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Npgsql": {
+              "target": "Package",
+              "version": "[10.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.416/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/glvl/Projects/Code/fullstack/delicias_bovinas/backend/Shared/Shared.Security/Shared.Security.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/glvl/Projects/Code/fullstack/delicias_bovinas/backend/Shared/Shared.Security/Shared.Security.csproj",
+        "projectName": "Shared.Security",
+        "projectPath": "/home/glvl/Projects/Code/fullstack/delicias_bovinas/backend/Shared/Shared.Security/Shared.Security.csproj",
+        "packagesPath": "/home/glvl/.nuget/packages/",
+        "outputPath": "/home/glvl/Projects/Code/fullstack/delicias_bovinas/backend/Shared/Shared.Security/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/glvl/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.IdentityModel.Tokens": {
+              "target": "Package",
+              "version": "[8.15.0, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[8.15.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.416/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "/home/glvl/Projects/Code/fullstack/delicias_bovinas/backend/UsersManagement/UsersManagement.Application/UsersManagement.Application.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -26,8 +158,17 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
+              "/home/glvl/Projects/Code/fullstack/delicias_bovinas/backend/Shared/Shared.Database/Shared.Database.csproj": {
+                "projectPath": "/home/glvl/Projects/Code/fullstack/delicias_bovinas/backend/Shared/Shared.Database/Shared.Database.csproj"
+              },
+              "/home/glvl/Projects/Code/fullstack/delicias_bovinas/backend/Shared/Shared.Security/Shared.Security.csproj": {
+                "projectPath": "/home/glvl/Projects/Code/fullstack/delicias_bovinas/backend/Shared/Shared.Security/Shared.Security.csproj"
+              },
               "/home/glvl/Projects/Code/fullstack/delicias_bovinas/backend/UsersManagement/UsersManagement.Domain/UsersManagement.Domain.csproj": {
                 "projectPath": "/home/glvl/Projects/Code/fullstack/delicias_bovinas/backend/UsersManagement/UsersManagement.Domain/UsersManagement.Domain.csproj"
+              },
+              "/home/glvl/Projects/Code/fullstack/delicias_bovinas/backend/UsersManagement/UsersManagement.Infrastructure/UsersManagement.Infrastructure.csproj": {
+                "projectPath": "/home/glvl/Projects/Code/fullstack/delicias_bovinas/backend/UsersManagement/UsersManagement.Infrastructure/UsersManagement.Infrastructure.csproj"
               }
             }
           }
@@ -104,6 +245,81 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.416/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/glvl/Projects/Code/fullstack/delicias_bovinas/backend/UsersManagement/UsersManagement.Infrastructure/UsersManagement.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/glvl/Projects/Code/fullstack/delicias_bovinas/backend/UsersManagement/UsersManagement.Infrastructure/UsersManagement.Infrastructure.csproj",
+        "projectName": "UsersManagement.Infrastructure",
+        "projectPath": "/home/glvl/Projects/Code/fullstack/delicias_bovinas/backend/UsersManagement/UsersManagement.Infrastructure/UsersManagement.Infrastructure.csproj",
+        "packagesPath": "/home/glvl/.nuget/packages/",
+        "outputPath": "/home/glvl/Projects/Code/fullstack/delicias_bovinas/backend/UsersManagement/UsersManagement.Infrastructure/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/glvl/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/home/glvl/Projects/Code/fullstack/delicias_bovinas/backend/Shared/Shared.Database/Shared.Database.csproj": {
+                "projectPath": "/home/glvl/Projects/Code/fullstack/delicias_bovinas/backend/Shared/Shared.Database/Shared.Database.csproj"
+              },
+              "/home/glvl/Projects/Code/fullstack/delicias_bovinas/backend/UsersManagement/UsersManagement.Domain/UsersManagement.Domain.csproj": {
+                "projectPath": "/home/glvl/Projects/Code/fullstack/delicias_bovinas/backend/UsersManagement/UsersManagement.Domain/UsersManagement.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "BCrypt.Net-Next": {
+              "target": "Package",
+              "version": "[4.0.3, )"
+            },
+            "Npgsql": {
+              "target": "Package",
+              "version": "[10.0.1, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

@@ -1,0 +1,13 @@
+/home/glvl/Projects/Code/fullstack/delicias_bovinas/backend/Shared/Shared.Database/bin/Debug/net8.0/Shared.Database.deps.json
+/home/glvl/Projects/Code/fullstack/delicias_bovinas/backend/Shared/Shared.Database/bin/Debug/net8.0/Shared.Database.dll
+/home/glvl/Projects/Code/fullstack/delicias_bovinas/backend/Shared/Shared.Database/bin/Debug/net8.0/Shared.Database.pdb
+/home/glvl/Projects/Code/fullstack/delicias_bovinas/backend/Shared/Shared.Database/obj/Debug/net8.0/Shared.Database.csproj.AssemblyReference.cache
+/home/glvl/Projects/Code/fullstack/delicias_bovinas/backend/Shared/Shared.Database/obj/Debug/net8.0/Shared.Database.GeneratedMSBuildEditorConfig.editorconfig
+/home/glvl/Projects/Code/fullstack/delicias_bovinas/backend/Shared/Shared.Database/obj/Debug/net8.0/Shared.Database.AssemblyInfoInputs.cache
+/home/glvl/Projects/Code/fullstack/delicias_bovinas/backend/Shared/Shared.Database/obj/Debug/net8.0/Shared.Database.AssemblyInfo.cs
+/home/glvl/Projects/Code/fullstack/delicias_bovinas/backend/Shared/Shared.Database/obj/Debug/net8.0/Shared.Database.csproj.CoreCompileInputs.cache
+/home/glvl/Projects/Code/fullstack/delicias_bovinas/backend/Shared/Shared.Database/obj/Debug/net8.0/Shared.Database.sourcelink.json
+/home/glvl/Projects/Code/fullstack/delicias_bovinas/backend/Shared/Shared.Database/obj/Debug/net8.0/Shared.Database.dll
+/home/glvl/Projects/Code/fullstack/delicias_bovinas/backend/Shared/Shared.Database/obj/Debug/net8.0/refint/Shared.Database.dll
+/home/glvl/Projects/Code/fullstack/delicias_bovinas/backend/Shared/Shared.Database/obj/Debug/net8.0/Shared.Database.pdb
+/home/glvl/Projects/Code/fullstack/delicias_bovinas/backend/Shared/Shared.Database/obj/Debug/net8.0/ref/Shared.Database.dll

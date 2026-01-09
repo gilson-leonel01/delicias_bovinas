@@ -8,6 +8,7 @@ public class User
     public string Email { get; set; } = string.Empty;
     public string PasswordHash { get; set; } = string.Empty;
     public string? Name { get; set; }
+    public string? Location {get; set;}
     public UserRole Role { get; set; } = UserRole.Customer;
     public DateTime CreatedAt { get; set; }
     public DateTime UpdatedAt { get; set; }

@@ -191,6 +191,10 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[8.0.10, )"
+            },
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
               "version": "[8.0.22, )"
@@ -245,8 +249,17 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
+              "/home/glvl/Projects/Code/fullstack/delicias_bovinas/backend/Shared/Shared.Database/Shared.Database.csproj": {
+                "projectPath": "/home/glvl/Projects/Code/fullstack/delicias_bovinas/backend/Shared/Shared.Database/Shared.Database.csproj"
+              },
+              "/home/glvl/Projects/Code/fullstack/delicias_bovinas/backend/Shared/Shared.Security/Shared.Security.csproj": {
+                "projectPath": "/home/glvl/Projects/Code/fullstack/delicias_bovinas/backend/Shared/Shared.Security/Shared.Security.csproj"
+              },
               "/home/glvl/Projects/Code/fullstack/delicias_bovinas/backend/UsersManagement/UsersManagement.Domain/UsersManagement.Domain.csproj": {
                 "projectPath": "/home/glvl/Projects/Code/fullstack/delicias_bovinas/backend/UsersManagement/UsersManagement.Domain/UsersManagement.Domain.csproj"
+              },
+              "/home/glvl/Projects/Code/fullstack/delicias_bovinas/backend/UsersManagement/UsersManagement.Infrastructure/UsersManagement.Infrastructure.csproj": {
+                "projectPath": "/home/glvl/Projects/Code/fullstack/delicias_bovinas/backend/UsersManagement/UsersManagement.Infrastructure/UsersManagement.Infrastructure.csproj"
               }
             }
           }
@@ -365,8 +378,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "/home/glvl/Projects/Code/fullstack/delicias_bovinas/backend/UsersManagement/UsersManagement.Application/UsersManagement.Application.csproj": {
-                "projectPath": "/home/glvl/Projects/Code/fullstack/delicias_bovinas/backend/UsersManagement/UsersManagement.Application/UsersManagement.Application.csproj"
+              "/home/glvl/Projects/Code/fullstack/delicias_bovinas/backend/Shared/Shared.Database/Shared.Database.csproj": {
+                "projectPath": "/home/glvl/Projects/Code/fullstack/delicias_bovinas/backend/Shared/Shared.Database/Shared.Database.csproj"
               },
               "/home/glvl/Projects/Code/fullstack/delicias_bovinas/backend/UsersManagement/UsersManagement.Domain/UsersManagement.Domain.csproj": {
                 "projectPath": "/home/glvl/Projects/Code/fullstack/delicias_bovinas/backend/UsersManagement/UsersManagement.Domain/UsersManagement.Domain.csproj"
@@ -392,6 +405,10 @@
             "BCrypt.Net-Next": {
               "target": "Package",
               "version": "[4.0.3, )"
+            },
+            "Npgsql": {
+              "target": "Package",
+              "version": "[10.0.1, )"
             }
           },
           "imports": [

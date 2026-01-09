@@ -59,6 +59,10 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[8.0.10, )"
+            },
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
               "version": "[8.0.22, )"
@@ -115,6 +119,12 @@
             "projectReferences": {
               "/home/glvl/Projects/Code/fullstack/delicias_bovinas/backend/ProductsManagement/ProductsManagement.Domain/ProductsManagement.Domain.csproj": {
                 "projectPath": "/home/glvl/Projects/Code/fullstack/delicias_bovinas/backend/ProductsManagement/ProductsManagement.Domain/ProductsManagement.Domain.csproj"
+              },
+              "/home/glvl/Projects/Code/fullstack/delicias_bovinas/backend/Shared/Shared.Database/Shared.Database.csproj": {
+                "projectPath": "/home/glvl/Projects/Code/fullstack/delicias_bovinas/backend/Shared/Shared.Database/Shared.Database.csproj"
+              },
+              "/home/glvl/Projects/Code/fullstack/delicias_bovinas/backend/Shared/Shared.Security/Shared.Security.csproj": {
+                "projectPath": "/home/glvl/Projects/Code/fullstack/delicias_bovinas/backend/Shared/Shared.Security/Shared.Security.csproj"
               }
             }
           }
