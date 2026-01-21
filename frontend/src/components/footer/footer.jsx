@@ -47,9 +47,9 @@ export default function Footer() {
           <div>
             <h4 className="font-bold mb-4">Contacto</h4>
             <ul className="space-y-2 text-red-200 text-sm">
-              <li>Bairro Popular, Rua Do Kibabo</li>
+              <li>Av. Brasil, Rua de Alfredo Felner</li>
               <li>deliciasbovinas@gmail.com</li>
-              <li>+244 929 626 961</li>
+              <li>+244 929 626 961 / +244 942 334 264</li>
             </ul>
           </div>
         </div>

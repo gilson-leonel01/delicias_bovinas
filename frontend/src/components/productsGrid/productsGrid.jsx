@@ -18,7 +18,7 @@ export default function ProductsGrid() {
           <div className="text-center mt-12">
             <button 
               onClick={() => setVisibleProducts(prev => prev + 3)}
-              className="px-8 py-3 bg-red-900 text-white rounded-full hover:bg-red-800 transition font-semibold"
+              className="px-8 py-3 bg-red-900 text-white font-semibold rounded-full hover:bg-red-800 hover:cursor-pointer transition "
             >
               Ver mais
             </button>

@@ -1,8 +1,8 @@
 import { useState, useEffect } from 'react';
-import { ShoppingCart, Menu, X } from 'lucide-react';
+import { ShoppingCart, Menu, X, User } from 'lucide-react';
 import logo from '../../assets/logo.avif';
 
-export default function Header() {
+export default function Header({ isAuthenticated }) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
@@ -33,9 +33,21 @@ export default function Header() {
           </nav>
 
           <div className="flex items-center gap-4">
-            <a href='/login' className="hidden md:block px-6 py-2 border-2 border-white text-white rounded-full hover:bg-white hover:text-red-900 transition hover:cursor-pointer">
-              Entrar
-            </a>
+            {!isAuthenticated ? (
+              <a 
+                href='/login' 
+                className="hidden md:block px-6 py-2 border-2 border-white text-white rounded-full hover:bg-white hover:text-red-900 transition hover:cursor-pointer"
+              >
+                Entrar
+              </a>
+            ) : (
+              <div className="hidden md:flex items-center gap-3 text-white">
+                <div className="w-8 h-8 bg-white rounded-full flex items-center justify-center">
+                  <User className="text-red-900" size={18} />
+                </div>
+                <span className="text-sm">Olá, Cliente</span>
+              </div>
+            )} 
 
             <a href='/cart' className="relative p-2 text-white hover:text-red-200 transition">
               <ShoppingCart size={24} />
@@ -55,9 +67,9 @@ export default function Header() {
               <a href="#produtos" className="text-white hover:text-red-200 transition">Produtos</a>
               <a href="#sobre" className="text-white hover:text-red-200 transition">Sobre</a>
               <a href="#contactos" className="text-white hover:text-red-200 transition">Contactos</a>
-              <button className="px-6 py-2 border-2 border-white text-white rounded-full hover:bg-white hover:text-red-900 transition hover:cursor-pointer">
+              <a href='/login' className="px-6 py-2 border-2 border-white text-white rounded-full hover:bg-white hover:text-red-900 transition hover:cursor-pointer">
                 Entrar
-              </button>
+              </a>
             </nav>
           </div>
         )}

@@ -1,6 +1,16 @@
 import React, { useState } from 'react';
-import logo from '../../assets/logo.avif';
-import { Users, Package, TrendingUp, DollarSign, Plus, Edit2, Trash2, Search, X } from 'lucide-react';
+import { 
+  X,
+  Plus, 
+  Users, 
+  Edit2, 
+  Search, 
+  Trash2, 
+  Package, 
+  DollarSign, 
+  TrendingUp,
+  LayoutDashboard
+} from 'lucide-react';
 
 export default function Dashboard() {
   const [activeTab, setActiveTab] = useState('products');
@@ -125,7 +135,7 @@ export default function Dashboard() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
           <div className="flex items-center justify-between">
             <div className='flex gap-4'>
-              <img src={logo} alt="Logo" className='w-14 h-14 rounded-full'/>
+              <LayoutDashboard className='w-14 h-14'/>
               <div className='flex-row gap-4'>
                 <h1 className="text-3xl font-bold">Dashboard Delícias Bovinas</h1>
                 <p className="text-red-200 mt-1">Gestão de Produtos e Usuários</p>

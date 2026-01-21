@@ -1,7 +1,9 @@
-import React, { useState } from 'react';
-import { Mail, Lock, Eye, EyeOff, User, ArrowRight, AlertCircle } from 'lucide-react';
+import { z } from 'zod';
+import { useState } from 'react';
 import logo from '../../assets/logo.avif';
 import loggo from '../../assets/logo.svg';
+import { useGoogleLogin } from '@react-oauth/google';
+import { Mail, Lock, Eye, EyeOff, User, ArrowRight, AlertCircle } from 'lucide-react';
 
 export default function LoginPage() {
   const [isLogin, setIsLogin] = useState(true);
@@ -16,33 +18,50 @@ export default function LoginPage() {
   });
   const [errors, setErrors] = useState({});
 
-  const validateForm = () => {
-    const newErrors = {};
+  // const validateForm = () => {
+  //   const newErrors = {};
 
-    if (!formData.email) {
-      newErrors.email = 'Email é obrigatório';
-    } else if (!/\S+@\S+\.\S+/.test(formData.email)) {
-      newErrors.email = 'Email inválido';
-    }
+  //   if (!formData.email) {
+  //     newErrors.email = 'Email é obrigatório';
+  //   } else if (!/\S+@\S+\.\S+/.test(formData.email)) {
+  //     newErrors.email = 'Email inválido';
+  //   }
 
-    if (!formData.password) {
-      newErrors.password = 'Senha é obrigatória';
-    } else if (formData.password.length < 6) {
-      newErrors.password = 'Senha deve ter no mínimo 6 caracteres';
-    }
+  //   if (!formData.password) {
+  //     newErrors.password = 'Senha é obrigatória';
+  //   } else if (formData.password.length < 6) {
+  //     newErrors.password = 'Senha deve ter no mínimo 6 caracteres';
+  //   }
 
-    if (!isLogin) {
-      if (!formData.name) {
-        newErrors.name = 'Nome é obrigatório';
+  //   if (!isLogin) {
+  //     if (!formData.name) {
+  //       newErrors.name = 'Nome é obrigatório';
+  //     }
+  //     if (formData.password !== formData.confirmPassword) {
+  //       newErrors.confirmPassword = 'As senhas não coincidem';
+  //     }
+  //   }
+
+  //   setErrors(newErrors);
+  //   return Object.keys(newErrors).length === 0;
+  // };
+
+    const googleLogin = useGoogleLogin({
+      onSuccess: async (tokenResponse) => {
+        console.log('Google token:', tokenResponse);
+
+        await fetch('/api/auth/google', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ accessToken: tokenResponse.access_token }),
+        });
+
+        alert('Login com Google realizado com sucesso!');
+      },
+      onError: () => {
+        alert('Erro ao fazer login com Google');
       }
-      if (formData.password !== formData.confirmPassword) {
-        newErrors.confirmPassword = 'As senhas não coincidem';
-      }
-    }
-
-    setErrors(newErrors);
-    return Object.keys(newErrors).length === 0;
-  };
+    });
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -64,6 +83,66 @@ export default function LoginPage() {
         alert('Conta criada com sucesso!');
       }
     }
+  };
+
+  const baseSchema = z.object({
+    email: z
+      .string()
+      .min(1, 'Email é obrigatório')
+      .email('Email inválido'),
+
+    password: z
+      .string()
+      .min(1, 'Senha é obrigatória')
+      .min(6, 'Senha deve ter no mínimo 6 caracteres'),
+
+    name: z.string().optional(),
+    confirmPassword: z.string().optional(),
+    role: z.string().optional(),
+  });
+
+  const registerSchema = baseSchema.superRefine((data, ctx) => {
+    if (!data.name) {
+      ctx.addIssue({
+        path: ['name'],
+        message: 'Nome é obrigatório',
+        code: z.ZodIssueCode.custom,
+      });
+    }
+
+    if (data.password !== data.confirmPassword) {
+      ctx.addIssue({
+        path: ['confirmPassword'],
+        message: 'As senhas não coincidem',
+        code: z.ZodIssueCode.custom,
+      });
+    }
+  });
+
+  const loginSchema = baseSchema.pick({
+    email: true,
+    password: true,
+  });
+
+  const validateForm = () => {
+    const schema = isLogin ? loginSchema : registerSchema;
+
+    const result = schema.safeParse(formData);
+
+    if (!result.success) {
+      const fieldErrors = {};
+
+      result.error.errors.forEach((err) => {
+        const field = err.path[0];
+        fieldErrors[field] = err.message;
+      });
+
+      setErrors(fieldErrors);
+      return false;
+    }
+
+    setErrors({});
+    return true;
   };
 
   const switchMode = () => {
@@ -94,11 +173,13 @@ export default function LoginPage() {
           
           <div className="relative z-10 text-center">
             <img 
-                src={logo} 
-                alt="Delícias Bovinas Logo" 
-                className="w-20 h-20 rounded-full mx-auto mb-4" 
+              src={logo} 
+              alt="Delícias Bovinas Logo" 
+              className="w-20 h-20 rounded-full mx-auto mb-4" 
             />
+
             <h1 className="text-4xl font-bold mb-4">Delícias Bovinas</h1>
+
             <p className="text-xl text-red-200 mb-8">
               A excelência e frescura em cada corte
             </p>
@@ -131,9 +212,9 @@ export default function LoginPage() {
         <div className="p-8 md:p-12 flex flex-col justify-center">
           <div className="md:hidden text-center mb-8">
             <img 
-                src={loggo} 
-                alt="Delícias Bovinas Logo" 
-                className="w-20 h-20 rounded-full mx-auto mb-4" 
+              src={loggo} 
+              alt="Delícias Bovinas Logo" 
+              className="w-20 h-20 rounded-full mx-auto mb-4" 
             />
             <h1 className="text-3xl font-bold text-red-900">Delícias Bovinas</h1>
           </div>
@@ -261,7 +342,7 @@ export default function LoginPage() {
                     onClick={() => setShowConfirmPassword(!showConfirmPassword)}
                     className="absolute right-4 top-1/2 transform -translate-y-1/2 text-gray-400 hover:text-gray-600 hover:cursor-pointer"
                   >
-                    {showConfirmPassword ? <EyeOff size={20} /> : <Eye size={20} />}
+                    {showConfirmPassword ? <Eye size={20} /> : <EyeOff size={20} />}
                   </button>
                 </div>
 
@@ -344,7 +425,11 @@ export default function LoginPage() {
             </div>
 
             <div className="mt-6 grid grid-cols-2 gap-4">
-              <button className="flex items-center justify-center gap-2 px-4 py-3 border-2 border-gray-300 rounded-xl hover:bg-gray-50 hover:cursor-pointer transition font-semibold text-gray-700">
+              <button
+                type='button'
+                onClick={() => googleLogin()}
+                className="flex items-center justify-center gap-2 px-4 py-3 border-2 border-gray-300 rounded-xl hover:border-gray-400 hover:bg-gray-50 hover:cursor-pointer transition font-semibold text-gray-700"
+              >
                 <svg className="w-5 h-5" viewBox="0 0 24 24">
                   <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
                   <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
@@ -354,7 +439,7 @@ export default function LoginPage() {
                 Google
               </button>
 
-              <button className="flex items-center justify-center gap-2 px-4 py-3 border-2 border-gray-300 rounded-xl hover:bg-gray-50 hover:cursor-pointer transition font-semibold text-gray-700">
+              <button className="flex items-center justify-center gap-2 px-4 py-3 border-2 border-gray-300 rounded-xl hover:border-gray-400 hover:bg-gray-50 hover:cursor-pointer transition font-semibold text-gray-700">
                 <svg className="w-5 h-5" fill="#1877F2" viewBox="0 0 24 24">
                   <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
                 </svg>

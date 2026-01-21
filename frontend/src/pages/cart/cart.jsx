@@ -1,5 +1,16 @@
 import React, { useState } from 'react';
-import { ShoppingCart, Trash2, Plus, Minus, ArrowLeft, Tag, Truck, CreditCard, MapPin, Phone, Mail } from 'lucide-react';
+import { 
+  Plus, 
+  Mail, 
+  Phone, 
+  Minus, 
+  Truck, 
+  Trash2, 
+  MapPin, 
+  ArrowLeft, 
+  CreditCard, 
+  ShoppingCart
+} from 'lucide-react';
 
 export default function CartPage() {
   const [cartItems, setCartItems] = useState([
@@ -241,15 +252,19 @@ export default function CartPage() {
                   <h3 className="font-bold text-gray-900 mb-3">Precisa de ajuda?</h3>
                   <div className="flex items-center gap-3 text-sm text-gray-600">
                     <MapPin size={18} className="text-red-900" />
-                    <a href="https://maps.app.goo.gl/csZ5LAnLEa1CMFLf6" target="_blank">
-                      <span>Bairro Popular, Rua Do Kibabo</span>
+                    <a href="https://maps.app.goo.gl/1kAvvEC2WE1FykRH6" target="_blank">
+                      <span>Av. Brasil, Rua de Alfredo Felner</span>
                     </a>
                   </div>
 
                   <div className="flex items-center gap-3 text-sm text-gray-600">
                     <Phone size={18} className="text-red-900" />
-                    <a href="callto:+244 929 626 961">
+                    <a href="callto:+244929626961">
                       <span>+244 929 626 961</span>
+                    </a>
+                    /
+                    <a href="callto:+244942334264">
+                      <span>+244 942 334 264</span> 
                     </a>
                   </div>
 

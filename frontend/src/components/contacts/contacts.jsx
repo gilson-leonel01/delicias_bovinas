@@ -84,6 +84,8 @@ export default function Contact() {
                 <div>
                   <h4 className="font-bold mb-1">Telefone</h4>
                   <a href="callto:+244929626961">+244 929 626 961</a>
+                  {" "} /
+                  <a href="callto: +244942334264">+244 942 334 264</a>
                 </div>
               </div>
 
@@ -99,21 +101,21 @@ export default function Contact() {
                 <MapPin className="mt-1 shrink-0" />
                 <div>
                   <h4 className="font-bold mb-1">Localização</h4>
-                  <p>Bairro Popular, Rua Do Kibabo</p>
+                  <p>Av. Brasil, Rua de Alfredo Felner</p>
                 </div>
               </div>
             </div>
 
-            <div className="rounded-2xl h-64 mt-6 mr-18 flex items-center justify-center">
+            <div className="rounded-lg sm:rounded-2xl overflow-hidden w-full h-48 sm:h-36 md:h-64">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3942.4062176708035!2d13.257972273117627!3d-8.841718590528306!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1a51f39c7c291935%3A0x8d80e7e4f631a68f!2sKibabo%20Popula!5e0!3m2!1spt-PT!2sao!4v1767705362558!5m2!1spt-PT!2sao"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3942.6281389432643!2d13.244665773117186!3d-8.820960590249873!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1a51f3cb3eadca63%3A0x9ae94b072868ea3b!2sR.%20de%20Alfredo%20Felner%2C%20Luanda!5e0!3m2!1spt-PT!2sao!4v1767802908428!5m2!1spt-PT!2sao"
                 width="500"
                 height="450"
                 style={{ border: 0 }}
                 allowFullScreen
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                title="Kibabo Popula Map"
+                title="R. de Alfredo Felner"
                 className="rounded-2xl h-64 flex items-center justify-center"
               />
             </div>

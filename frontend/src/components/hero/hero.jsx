@@ -1,4 +1,11 @@
 export default function Hero() {
+  const scrollToProdutos = () => {
+    const element = document.getElementById('produtos');
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  };
+
   return (
     <section id="inicio" className="pt-24 pb-12 bg-linear-to-b from-red-50 to-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -14,11 +21,17 @@ export default function Hero() {
               </p>
 
               <div className="flex flex-wrap gap-4">
-                <button className="px-8 py-3 bg-red-900 text-white rounded-full hover:bg-red-800 hover:cursor-pointer transition font-semibold">
+                <button 
+                  onClick={scrollToProdutos}
+                  className="px-8 py-3 bg-red-900 text-white rounded-full hover:bg-red-800 hover:cursor-pointer transition font-semibold"
+                >
                   PEÇA AGORA
                 </button>
 
-                <button className="px-8 py-3 bg-white text-red-900 border-2 border-red-900 rounded-full hover:bg-red-900 hover:text-white transition hover:cursor-pointer font-semibold">
+                <button 
+                  onClick={() => {}}
+                  className="px-8 py-3 bg-white text-red-900 border-2 border-red-900 rounded-full hover:bg-red-900 hover:text-white transition hover:cursor-pointer font-semibold"
+                >
                   RESERVAR
                 </button>
               </div>

@@ -1,6 +1,14 @@
 import { Star } from "lucide-react";
 
-export default function ProductCard({ product, featured = false }) {
+export default function ProductCard({ product, featured = false, onAddToCart, isAuthenticated, onLoginRequired }) {
+  const handleAddToCart = () => {
+    if (!isAuthenticated) {
+      onLoginRequired('Para adicionar produtos ao carrinho');
+      return;
+    }
+    onAddToCart(product);
+  };
+
   return (
     <div className={`bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 hover:-translate-y-1 ${featured ? 'w-64' : ''}`}>
       {product.discount && (
@@ -44,7 +52,10 @@ export default function ProductCard({ product, featured = false }) {
           </div>
         </div>
 
-        <button className="w-full bg-red-900 text-white py-2 rounded-lg hover:bg-red-800 transition hover:cursor-pointer font-semibold">
+        <button 
+          onClick={handleAddToCart}
+          className="w-full bg-red-900 text-white py-2 rounded-lg hover:bg-red-800 transition hover:cursor-pointer font-semibold"
+        >
           Adicionar
         </button>
       </div>

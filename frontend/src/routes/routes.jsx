@@ -15,9 +15,9 @@ export default function Routers() {
         <Router>
             <Routes>
                 <Route path="/" element={<Home />} />
-                <Route path="/dashboard" element={<Dashboard />} />
                 <Route path="/cart" element={<Cart />} />
                 <Route path="/login" element={<Login />} /> 
+                <Route path="/dashboard" element={<Dashboard />} />
                 <Route path="*" element={<NotFound />} />
             </Routes>
         </Router>
